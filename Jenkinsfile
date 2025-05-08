@@ -3,7 +3,13 @@ pipeline {
         timestamps()
     }
 
-    agent any
+    agent {
+        docker {
+            image 'python:3.11'
+            args '-u root:root -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp'
+            reuseNode true
+        }
+    }
 
     stages {
         stage('Checkout') {
