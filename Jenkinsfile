@@ -21,7 +21,7 @@ pipeline {
         stage('Linting') {
             steps {
                 script {
-                    sh 'ls -la'
+                    sh 'pylint main.py'
                 }
             }
         }
