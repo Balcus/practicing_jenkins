@@ -51,7 +51,7 @@ class TestStack(unittest.TestCase):
         self.assertEqual(self.stack.size(), 1)
         self.stack.push(20)
         self.stack.pop()
-        self.assertEqual(self.stack.size(), 5)
+        self.assertEqual(self.stack.size(), 1)
 
 if __name__ == '__main__':
     unittest.main()
