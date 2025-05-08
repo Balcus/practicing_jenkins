@@ -55,9 +55,7 @@ pipeline {
     }
     post {
         always {
-            script {
-                sh 'echo Testing complete'
-            }
+            junit 'test-reports/*.xml'
         }
     }
 }
