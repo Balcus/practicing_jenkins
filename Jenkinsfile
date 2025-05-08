@@ -21,8 +21,11 @@ pipeline {
         stage('Linting') {
             steps {
                 script {
-                    sh 'pip install pylint --break-system-packages'
-                    sh 'pylint main.py'
+                    sh '''
+                    pip install pylint --break-system-packages
+                    export PATH=$HOME/.local/bin:$PATH
+                    pylint main.py
+                    '''
                 }
             }
         }
