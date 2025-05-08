@@ -42,12 +42,12 @@ pipeline {
                 }
             }
         }
-        post {
+    }
+    post {
             always {
                 script {
                     sh 'echo Testing complete'
                 }
             }
         }
-    }
 }
