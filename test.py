@@ -1,4 +1,5 @@
 import unittest
+import xmlrunner
 from stack import Stack
 
 class TestStack(unittest.TestCase):
@@ -54,4 +55,7 @@ class TestStack(unittest.TestCase):
         self.assertEqual(self.stack.size(), 1)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(
+        testRunner=xmlrunner.XMLTestRunner(output='test-reports'),
+        failfast=False, buffer=False, catchbreak=False
+    )
