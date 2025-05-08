@@ -21,6 +21,7 @@ pipeline {
         stage('Linting') {
             steps {
                 script {
+                    sh 'pip install pylint --break-system-packages'
                     sh 'pylint main.py'
                 }
             }
