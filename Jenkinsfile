@@ -48,7 +48,7 @@ pipeline {
             steps  {
                 script {
                     echo 'Running tests'
-                    sh 'pytohn3 test.py'
+                    sh 'python test.py'
                 }
             }
         }
