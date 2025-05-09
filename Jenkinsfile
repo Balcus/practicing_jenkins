@@ -56,6 +56,9 @@ pipeline {
     post {
         always {
             junit 'test-reports/*.xml'
+            script {
+                sh 'rm -rf test-reports'
+            }
         }
     }
 }
