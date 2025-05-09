@@ -12,6 +12,14 @@ pipeline {
     }
 
     stages {
+        stage('Remove Residuals') {
+            steps {
+                script {
+                    echo 'Cleaning up previous builds'
+                    sh 'rm -rf test-reports'
+                }
+            }
+        }
         stage('Checkout') {
             steps {
                 checkout scm
@@ -56,9 +64,6 @@ pipeline {
     post {
         always {
             junit 'test-reports/*.xml'
-            script {
-                sh 'rm -rf test-reports'
-            }
         }
     }
 }
