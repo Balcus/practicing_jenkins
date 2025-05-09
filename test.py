@@ -1,5 +1,6 @@
 import unittest
 import xmlrunner
+import numpy as np
 from stack import Stack
 
 class TestStack(unittest.TestCase):
@@ -53,6 +54,14 @@ class TestStack(unittest.TestCase):
         self.stack.push(20)
         self.stack.pop()
         self.assertEqual(self.stack.size(), 1)
+
+    def test_str_representation(self):
+        self.assertEqual(str(self.stack), "Stack is empty")
+        self.stack.push(10)
+        self.assertEqual(str(self.stack), str(np.array([10])))
+        self.stack.push(20)
+        self.stack.push(30)
+        self.assertEqual(str(self.stack), str(np.array([10, 20, 30])))
 
 if __name__ == '__main__':
     unittest.main(

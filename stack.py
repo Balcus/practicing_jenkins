@@ -32,3 +32,8 @@ class Stack:
 
     def size(self):
         return self.top + 1
+    
+    def __str__(self):
+        if self.is_empty():
+            return "Stack is empty"
+        return str(self.stack[:self.top + 1])

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestStack-20250509234828" tests="9" file=".py" time="0.003" timestamp="2025-05-09T23:48:29" failures="0" errors="0" skipped="0">
+	<testcase classname="TestStack" name="test_is_empty" time="0.001" timestamp="2025-05-09T23:48:29" file="test.py" line="22"/>
+	<testcase classname="TestStack" name="test_is_full" time="0.000" timestamp="2025-05-09T23:48:29" file="test.py" line="29"/>
+	<testcase classname="TestStack" name="test_overflow" time="0.000" timestamp="2025-05-09T23:48:29" file="test.py" line="35"/>
+	<testcase classname="TestStack" name="test_peek" time="0.000" timestamp="2025-05-09T23:48:29" file="test.py" line="16"/>
+	<testcase classname="TestStack" name="test_peek_empty" time="0.000" timestamp="2025-05-09T23:48:29" file="test.py" line="46"/>
+	<testcase classname="TestStack" name="test_push_and_pop" time="0.000" timestamp="2025-05-09T23:48:29" file="test.py" line="10"/>
+	<testcase classname="TestStack" name="test_size" time="0.000" timestamp="2025-05-09T23:48:29" file="test.py" line="50"/>
+	<testcase classname="TestStack" name="test_str_representation" time="0.001" timestamp="2025-05-09T23:48:29" file="test.py" line="58"/>
+	<testcase classname="TestStack" name="test_underflow" time="0.000" timestamp="2025-05-09T23:48:29" file="test.py" line="42"/>
+</testsuite>
